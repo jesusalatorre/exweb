@@ -17,10 +17,11 @@
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^3.2.3",
     "mongoose": "^5.5.1",
-    "validator": "^10.11.0"
+    "validator": "^10.11.0",
+    "body-parser": "^1.19.0"
+
   },
   "devDependencies": {
-    "body-parser": "^1.19.0",
     "nodemon": "^1.19.0"
   }
 }
