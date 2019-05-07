@@ -20,6 +20,7 @@
     "validator": "^10.11.0"
   },
   "devDependencies": {
+    "body-parser": "^1.19.0",
     "nodemon": "^1.19.0"
   }
 }
