@@ -89,8 +89,8 @@ userSchema.statics.findByCredentials = function(email, password) {
 
 userSchema.methods.generateToken = function() {
   const user = this
-  const secret = process.env.secret || config.secret
-  const token = jwt.sign({ _id: user._id.toString() }, secret, { expiresIn: '7 days'})
+  const superSecret = process.env.secret || config.secret
+  const token = jwt.sign({ _id: user._id.toString() }, superSecret, { expiresIn: '7 days'})
   user.tokens = user.tokens.concat({ token })
   return new Promise(function( resolve, reject) {
     user.save().then(function(user){
