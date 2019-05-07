@@ -1,3 +1,3 @@
-module.exports.connectionURL = 'mongodb+srv://jesus_alatorre:chuchu@cluster0-bo0at.mongodb.net/test?retryWrites=true'
+module.exports.connectionURL = process.env.DB_CONNECTION_STRING
 
-module.exports.secret = 'chuchu'
+module.exports.secret = process.env.SECRET
